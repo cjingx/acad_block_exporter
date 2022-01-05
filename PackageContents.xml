@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ApplicationPackage 
+   SchemaVersion="1.0" 
+   AutodeskProduct="AutoCAD" 
+   Name="BGS Block Exporter"
+   Description="BGS Conveyor Tool Designed for Conversion to Revit"
+   AppVersion="1.0.0" 
+   ProductType="Application" 
+   Author="Jing Chen" 
+   OnlineDocumentation = "https://docs.google.com/document/d/1EqWPMh3g3ipOtXXc-9HywzEayd0MFEXFsSZg2SqR-so/edit?usp=sharing">
+   
+   <CompanyDetails Name="Beumer Group Singapore" Url="http://www.beumergroup.com/" Email="jingchen@tutanota.com" Phone="65-84127356" />
+   
+   <RuntimeRequirements OS="Win64" Platform="AutoCAD|AutoCAD*" />
+   
+   <Components>
+      <RuntimeRequirements OS="Win64" Platform="AutoCAD|AutoCAD*" SeriesMin="24.0" SeriesMax="24.0" SupportPath="./Contents"/>
+      <ComponentEntry AppName="NET_tool" Version="1.0.0" ModuleName="./Contents/Block_Exporter.dll" LoadOnAutoCADStartup="True"/>	  
+	  <ComponentEntry AppName="Path_Resolver" Version="1.0.0" 
+					  ModuleName="./Contents/resolve_path.lsp" 
+					  LoadOnAutoCADStartup="True"
+					  LoadOnCommandInvocation="False"
+					  PerDocument="True"
+					  AppType="Lisp"/>	  
+   </Components>    
+   
+</ApplicationPackage>
