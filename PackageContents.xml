@@ -15,7 +15,7 @@
    <RuntimeRequirements OS="Win64" Platform="AutoCAD|AutoCAD*" />
    
    <Components>
-      <RuntimeRequirements OS="Win64" Platform="AutoCAD|AutoCAD*" SeriesMin="24.0" SeriesMax="24.0" SupportPath="./Contents"/>
+      <RuntimeRequirements OS="Win64" Platform="AutoCAD|AutoCAD*" SeriesMin="24.0" SeriesMax="24.3" SupportPath="./Contents"/>
       <ComponentEntry AppName="NET_tool" Version="1.0.0" ModuleName="./Contents/Block_Exporter_V2.dll" LoadOnAutoCADStartup="True"/>	  
 	  <ComponentEntry AppName="Path_Resolver" Version="1.0.0" 
 					  ModuleName="./Contents/resolve_path.lsp" 
